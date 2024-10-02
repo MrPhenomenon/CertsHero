@@ -298,7 +298,101 @@ section {
     border: 1px solid var(--accent-color);
 }
 
+/* --------------------------------------- */
+/* Login page
+/* --------------------------------------- */
 
+#exams .title h1{
+    font-size: 35px;
+}
+
+#exams .exam-section{
+    border: 1px solid #a8a8a8;
+    padding: 10px 10px;
+}
+
+#exams .exam-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.exam-section h2{
+    font-weight: 700;
+    font-size: 20px;
+    padding-bottom: 0;
+    color: var(--nav-dropdown-hover-color);
+}
+.exam-section a{
+   text-decoration: none;
+}
+.exam-section p{
+    color: #495b6e;
+    margin-bottom: 5px;
+}
+.with-divider::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    transform: translateY(-50%);
+    height: 35px;
+    width: 2px;
+    background-color: #a8a8a8; 
+}
+
+@media (max-width: 767px){
+    .with-divider::before{
+        display: none;
+    }
+}
+
+#exams .col{
+    padding-top: 10px;
+}
+
+
+
+#offer-card  h4{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 3px;
+}
+#offer-card  p{
+    font-size: 16px;
+    font-weight: 600;
+}
+#offer-card  .offer h4{
+    color: var(--accent-color);
+    font-size: 25px;
+    font-weight: 800;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+#offer-card #price span{
+    font-size: 80px;
+    font-weight: 400;
+}
+
+#offer-card  select{
+    background-color: var(--accent-color);
+    border-radius: 10px;
+    background-color: var(--contrast-color);
+    color: black;
+    border: none;
+    box-shadow: none;
+    padding: 10px;
+}
+
+#offer-card .btn-primary{
+    background-color: #357ab8 ;
+    margin-top: 10px;
+}
+#offer-card .btn a{
+    text-decoration: none;
+    color: white;
+}
 /* --------------------------------------- */
 /* FAQs page
 /* --------------------------------------- */
@@ -384,3 +478,4 @@ section {
         padding: 50px 10px;
     }
 }
+
