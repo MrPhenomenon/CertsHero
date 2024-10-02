@@ -191,12 +191,20 @@ section {
 #accordion .accordion-button {
     background-color: var(--accent-color);
     font-size: 20px;
+    border: 1px solid var(--default-color);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
     font-weight: 600;
     box-shadow: none;
     color: var(--heading-color);
 
 }
-
+#accordion .accordion-body{
+    border-left: 1px solid #272828;
+    border-right: 1px solid #272828;
+    
+}
 #accordion .btn {
     border-radius: 10px;
     border: 2px solid var(--nav-dropdown-hover-color);
@@ -351,6 +359,12 @@ section {
 }
 
 
+@media (max-width: 991px) {
+    #offer-card {
+        margin-top: 20px;
+    }
+    
+}
 
 #offer-card  h4{
     font-size: 20px;
