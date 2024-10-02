@@ -1,0 +1,386 @@
+:root {
+    --default-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --heading-font: "Raleway", sans-serif;
+    --nav-font: "Poppins", sans-serif;
+}
+
+/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
+:root {
+    --background-color: #ffffff;
+    /* Background color for the entire website, including individual sections */
+    --default-color: #495b6e;
+    /* Default color used for the majority of the text content across the entire website */
+    --heading-color: #1e2022;
+    /* Color for headings, subheadings and title throughout the website */
+    --accent-color: #fec407;
+    /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+    --surface-color: #ffffff;
+    /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+    --contrast-color: #ffffff;
+    /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+
+}
+
+/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
+:root {
+    --nav-color: #272828;
+    /* The default color of the main navmenu links */
+    --nav-hover-color: #fec407;
+    /* Applied to main navmenu links when they are hovered over or active */
+    --nav-mobile-background-color: #ffffff;
+    /* Used as the background color for mobile navigation menu */
+    --nav-dropdown-background-color: #ffffff;
+    /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+    --nav-dropdown-color: #272828;
+    /* Used for navigation links of the dropdown items in the navigation menu. */
+    --nav-dropdown-hover-color: #357ab8;
+    /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+}
+
+/*--------------------------------------------------------------
+# Navbar 
+--------------------------------------------------------------*/
+.navbar button {
+    border: 1px solid var(--accent-color);
+}
+
+header h1 {
+    color: var(--accent-color);
+}
+
+.navbar .nav-link {
+    color: white;
+    font-size: 18px;
+}
+
+.navbar .nav-item .active {
+    color: var(--accent-color);
+
+}
+
+.search {
+    position: relative;
+    box-shadow: 0 0 40px rgba(51, 51, 51, .1);
+
+}
+
+.search input {
+    width: 20rem;
+    height: 50px;
+    text-indent: 25px;
+    border: 2px solid #d6d4d4;
+
+
+}
+
+.search .bi-search {
+    position: absolute;
+    top: 13px;
+    left: 16px;
+
+}
+
+.search button {
+    color: var(--nav-color);
+    border: none;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 40px;
+    width: 100px;
+    background: var(--accent-color);
+
+}
+
+/* --------------------------------------- */
+/* Hero Section */
+/* --------------------------------------- */
+
+section {
+    margin-top: 50px;
+}
+
+.hero h2 {
+    font-size: 50px;
+    font-weight: 800;
+    color: var(--background-color);
+
+}
+
+.hero p {
+    color: var(--background-color);
+    font-size: 20px;
+}
+
+.btn-warning {
+    background-color: var(--accent-color);
+    color: black;
+}
+
+/* --------------------------------------- */
+/* why-us Section */
+/* --------------------------------------- */
+
+#why-us .row {
+    padding: 0 10rem;
+}
+
+#why-us .col-lg-6 {
+    margin-bottom: 30px;
+}
+
+@media (max-width:900px) {
+    #why-us .row {
+        padding: 0;
+    }
+}
+
+
+#why-us .heading h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#why-us .heading p {
+    font-size: 19px;
+}
+
+#why-us .heading {
+    margin-bottom: 5rem;
+}
+
+#why-us h4 {
+    margin-bottom: 10px;
+    font-weight: 800;
+    font-size: 20px;
+    color: var(--heading-color);
+}
+
+#why-us .row p {
+    font-size: 16px;
+    color: var(--default-color);
+}
+
+/* --------------------------------------- */
+/* Accordion Section */
+/* --------------------------------------- */
+
+.accordion .heading h4 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+}
+
+.accordion-item {
+    border: none;
+    margin-top: 30px;
+}
+
+#accordion .accordion-button {
+    background-color: var(--accent-color);
+    font-size: 20px;
+    font-weight: 600;
+    box-shadow: none;
+    color: var(--heading-color);
+
+}
+
+#accordion .btn {
+    border-radius: 10px;
+    border: 2px solid var(--nav-dropdown-hover-color);
+    font-family: var(--heading-font);
+    font-weight: 600;
+    padding: 10px;
+    margin-left: auto;
+    min-width: 135px;
+}
+
+#accordion .btn:hover {
+    background-color: var(--nav-dropdown-hover-color);
+    color: white;
+}
+
+#accordion .col-lg-2 {
+    margin: 15px 0px;
+
+}
+
+#accordion .card {
+    width: 150px;
+    display: inline-block;
+    margin-bottom: 20px;
+    border: none;
+    text-align: center;
+}
+
+/* --------------------------------------- */
+/* About Section */
+/* --------------------------------------- */
+
+#about .row {
+    padding-top: 100px;
+}
+
+#about .row h2 {
+    font-size: 40px;
+    font-weight: 800;
+    color: var(--nav-dropdown-hover-color);
+
+}
+
+#about .row p {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--heading-color);
+}
+
+#about img {
+    border-radius: 20px;
+    height: 20rem;
+}
+
+/* --------------------------------------- */
+/* Vendors page
+/* --------------------------------------- */
+
+.table {
+    background-color: white;
+    border: 1px solid #ddd;
+}
+
+
+
+.table th,
+.table td {
+    padding: 15px;
+    text-align: center;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #fec407 !important;
+    color: #fff !important;
+}
+
+.vendor-link {
+    color: #357ab8;
+    text-decoration: none;
+}
+
+.vendor-link:hover {
+    color: var(--heading-color);
+}
+
+
+.pagination .page-item .page-link {
+    color: var(--heading-color);
+}
+
+.pagination .page-item :hover {
+    background-color: var(--accent-color);
+
+}
+
+.pagination .page-item .active {
+    background-color: var(--accent-color);
+    color: var(--heading-color);
+    border: 1px solid var(--accent-color);
+}
+
+
+/* --------------------------------------- */
+/* FAQs page
+/* --------------------------------------- */
+
+#faq .col-lg-6{
+    margin-top: 100px;
+}
+#faq button{
+    background-color: #f1f1f1 !important;
+    box-shadow: none;
+    color: var(--heading-color);
+}
+
+#faq img{
+    height: 350px;
+}
+@media (max-width: 450px){
+    #faq .col-lg-6{
+        margin-top: 10px;
+    }
+}
+
+/* --------------------------------------- */
+/* Login page
+/* --------------------------------------- */
+
+.login-container input{
+    margin-top:20px ;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid var(--nav-dropdown-hover-color);
+}
+
+.login-container{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+.login-form-1{
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.login-form-1 h2{
+    color: var(--nav-dropdown-hover-color);
+    margin-bottom: 50px;
+}
+.login-form-2{
+    background: var(--nav-dropdown-hover-color);
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.login-form-2 h2{
+    color: var(--contrast-color);    
+    margin-bottom: 60px;
+
+}
+.login-container form{
+    padding: 5rem 6rem;
+}
+.btnSubmit{
+    width: 8rem;
+    border-radius: 1rem;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+}
+.login-form-1 .btnSubmit{
+    font-weight: 600;
+    color: #fff;
+    background-color: var(--nav-dropdown-hover-color);
+}
+.login-form-2 .btnSubmit{
+    font-weight: 600;
+    color: var(--nav-dropdown-hover-color);
+    background-color: #fff;
+}
+.login-form-2 .ForgetPwd{
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+@media (max-width: 999px){
+    .login-container form{
+        padding: 50px 10px;
+    }
+}
