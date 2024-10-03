@@ -4,38 +4,26 @@
     --nav-font: "Poppins", sans-serif;
 }
 
-/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root {
+    --primary-color: #fec407;
+
+    --secondary-color: #357ab8;
+
     --background-color: #ffffff;
-    /* Background color for the entire website, including individual sections */
+
     --default-color: #495b6e;
-    /* Default color used for the majority of the text content across the entire website */
+ 
     --heading-color: #1e2022;
-    /* Color for headings, subheadings and title throughout the website */
-    --accent-color: #fec407;
-    /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+
     --surface-color: #ffffff;
-    /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+
     --contrast-color: #ffffff;
-    /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 
-}
-
-/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
-:root {
     --nav-color: #272828;
-    /* The default color of the main navmenu links */
-    --nav-hover-color: #fec407;
-    /* Applied to main navmenu links when they are hovered over or active */
-    --nav-mobile-background-color: #ffffff;
-    /* Used as the background color for mobile navigation menu */
-    --nav-dropdown-background-color: #ffffff;
-    /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-    --nav-dropdown-color: #272828;
-    /* Used for navigation links of the dropdown items in the navigation menu. */
-    --nav-dropdown-hover-color: #357ab8;
-    /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+
+
 }
+
 
 h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -55,11 +43,11 @@ h6 {
 # Navbar 
 --------------------------------------------------------------*/
 .navbar button {
-    border: 1px solid var(--accent-color);
+    border: 1px solid var(--primary-color);
 }
 
 header h1 {
-    color: var(--accent-color);
+    color: var(--primary-color);
 }
 
 .navbar .nav-link {
@@ -68,7 +56,7 @@ header h1 {
 }
 
 .navbar .nav-item .active {
-    color: var(--accent-color);
+    color: var(--primary-color);
 
 }
 
@@ -102,7 +90,7 @@ header h1 {
     right: 5px;
     height: 40px;
     width: 100px;
-    background: var(--accent-color);
+    background: var(--primary-color);
 
 }
 
@@ -127,7 +115,7 @@ section {
 }
 
 .btn-warning {
-    background-color: var(--accent-color);
+    background-color: var(--primary-color);
     color: black;
 }
 
@@ -189,7 +177,7 @@ section {
 }
 
 #accordion .accordion-button {
-    background-color: var(--accent-color);
+    background-color: var(--primary-color);
     font-size: 20px;
     border: 1px solid var(--default-color);
     margin-left: auto;
@@ -207,7 +195,7 @@ section {
 }
 #accordion .btn {
     border-radius: 10px;
-    border: 2px solid var(--nav-dropdown-hover-color);
+    border: 2px solid var(--secondary-color);
     font-family: var(--heading-font);
     font-weight: 600;
     padding: 10px;
@@ -216,7 +204,7 @@ section {
 }
 
 #accordion .btn:hover {
-    background-color: var(--nav-dropdown-hover-color);
+    background-color: var(--secondary-color);
     color: white;
 }
 
@@ -244,12 +232,12 @@ section {
 #about .row h2 {
     font-size: 40px;
     font-weight: 800;
-    color: var(--nav-dropdown-hover-color);
+    color: var(--secondary-color);
 
 }
 
 #about .row p {
-    font-size: 20px;
+    font-size: 19px;
     font-weight: 500;
     color: var(--heading-color);
 }
@@ -296,14 +284,14 @@ section {
 }
 
 .pagination .page-item :hover {
-    background-color: var(--accent-color);
+    background-color: var(--primary-color);
 
 }
 
 .pagination .page-item .active {
-    background-color: var(--accent-color);
+    background-color: var(--primary-color);
     color: var(--heading-color);
-    border: 1px solid var(--accent-color);
+    border: 1px solid var(--primary-color);
 }
 
 /* --------------------------------------- */
@@ -328,7 +316,7 @@ section {
     font-weight: 700;
     font-size: 20px;
     padding-bottom: 0;
-    color: var(--nav-dropdown-hover-color);
+    color: var(--secondary-color);
 }
 .exam-section a{
    text-decoration: none;
@@ -376,7 +364,7 @@ section {
     font-weight: 600;
 }
 #offer-card  .offer h4{
-    color: var(--accent-color);
+    color: var(--primary-color);
     font-size: 25px;
     font-weight: 800;
     position: absolute;
@@ -390,7 +378,7 @@ section {
 }
 
 #offer-card  select{
-    background-color: var(--accent-color);
+    background-color: var(--primary-color);
     border-radius: 10px;
     background-color: var(--contrast-color);
     color: black;
@@ -437,7 +425,7 @@ section {
     margin-top:20px ;
     height: 50px;
     border-radius: 10px;
-    border: 1px solid var(--nav-dropdown-hover-color);
+    border: 1px solid var(--secondary-color);
 }
 
 .login-container{
@@ -449,11 +437,11 @@ section {
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
 }
 .login-form-1 h2{
-    color: var(--nav-dropdown-hover-color);
+    color: var(--secondary-color);
     margin-bottom: 50px;
 }
 .login-form-2{
-    background: var(--nav-dropdown-hover-color);
+    background: var(--secondary-color);
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
 }
 .login-form-2 h2{
@@ -474,11 +462,11 @@ section {
 .login-form-1 .btnSubmit{
     font-weight: 600;
     color: #fff;
-    background-color: var(--nav-dropdown-hover-color);
+    background-color: var(--secondary-color);
 }
 .login-form-2 .btnSubmit{
     font-weight: 600;
-    color: var(--nav-dropdown-hover-color);
+    color: var(--secondary-color);
     background-color: #fff;
 }
 .login-form-2 .ForgetPwd{
